@@ -17,13 +17,17 @@ WalletApp est une application simple de gestion de portefeuille en C++.
 1. **Compilation :** Assurez-vous d'avoir un compilateur C++ installé sur votre système. Utilisez la commande suivante pour compiler le programme :
 
     ```bash
-    g++ WalletApp.cpp -o WalletApp
+
+    c++ -c ../Item.cpp ../MultipleItem.cpp  ../UniqueItem.cpp ../UtilsDate.cpp ../CIN.cpp ../CreditCard.cpp ../DrivingLicense.cpp ../IdPhoto.cpp ../Money.cpp ../uuid.cpp ../VisitCard.cpp ../Wallet.cpp ../Wallet.cpp ../UtilsMethod.cpp ../Main.cpp
+
+
+    c++ -o MonProgramme uuid.o Item.o  UtilsMethod.o  MultipleItem.o  UniqueItem.o CreditCard.o  DrivingLicense.o  IdPhoto.o    Money.o  VisitCard.o  CIN.o  Wallet.o Main.o
     ```
 
 2. **Exécution :** Après la compilation, lancez le programme avec la commande :
 
     ```bash
-    ./WalletApp
+    ./MonProgramme
     ```
 
 3. **Suivez les instructions à l'écran :** Le programme vous guidera pour créer un compte, vous connecter et effectuer des opérations de portefeuille.
